@@ -3,49 +3,42 @@ html {
     font-family: 'Lado', sans-serif;
   }
   
-  .vader  {
-    display: block;
-    font-family: Lado, sans-serif;
-    font-size: 10px;
-    height: 100px;
-    margin-bottom: 0px;
-    margin-left: 220px;
-    margin-right: 220px;
-    margin-top: 0px;
-    width: 0px;
+.vader {
+  width: 300px;
 }
-  
-  h1 {
-    font-size: 60px;
-    text-align: center;
-  }
-  
-  p, li {
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 1px;
-  }
-  
-  
-  html {
-    background-color: rgb(93, 93, 93);
-  }
-  
-  body {
-    width: 600px;
-    margin: 0 auto;
-    background-color: #00b7ff;
-    padding: 0 20px 20px 20px;
-    border: 5px solid rgb(93, 93, 93);
-  }
-  
-  h1 {
-    margin: 0;
-    padding: 20px 0;
-    color: rgb(93, 93, 93);
-    text-shadow: 3px 3px 1px black;
+
+
+h1 {
+  font-size: 60px;
+  text-align: center;
 }
-  img {
-    display: block;
-    margin: 0 auto;
-  }
+
+p, li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+
+html {
+  background-color: rgb(93, 93, 93);
+}
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #00b7ff;
+  padding: 0 20px 20px 20px;
+  border: 5px solid rgb(93, 93, 93);
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: rgb(93, 93, 93);
+  text-shadow: 3px 3px 1px black;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
