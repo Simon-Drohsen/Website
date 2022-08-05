@@ -3,6 +3,17 @@ html {
     font-family: 'Lado', sans-serif;
   }
   
+  .vader  {
+    display: block;
+    font-family: Lado, sans-serif;
+    font-size: 10px;
+    height: 53.125px;
+    margin-bottom: 0px;
+    margin-left: 220px;
+    margin-right: 220px;
+    margin-top: 0px;
+    width: 250px;
+}
   
   h1 {
     font-size: 60px;
