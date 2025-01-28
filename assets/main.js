@@ -1,27 +1,29 @@
-var myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hallo Michis!';
-
-
-var myImage = document.querySelector('img');
+const myImage = document.querySelector('img');
+const myButton = document.getElementById('change_name');
+const myHeading = document.querySelector('h1');
 
 myImage.onclick = function() {
-    var mySrc = myImage.getAttribute('src');
-    if(mySrc === 'assets/logos/w-vision.svg') {
-        myImage.setAttribute('src','assets/star_wars_logo.png');
+    if(myImage.getAttribute('src') === 'assets/images/w-vision.svg') {
+        myImage.setAttribute('src','assets/images/star_wars_logo.png');
+        myImage.setAttribute('alt','Star Wars Logo');
     } else {
-      myImage.setAttribute('src','assets/logos/w-vision.svg');
+        myImage.setAttribute('src','assets/images/w-vision.svg');
+        myImage.setAttribute('alt','w-vision Logo');
     }
 }
-var myButton = document.querySelector('button');
-var myHeading = document.querySelector('h1');
+
+if(!localStorage.getItem('name')) {
+    setUserName();
+} else {
+    myHeading.textContent = 'w-vision ist cool, ' + localStorage.getItem('name');
+}
+
+myButton.onclick = function() {
+    setUserName();
+}
+
 function setUserName() {
-    var myName = prompt('Bitte geben Sie Ihren Namen ein.');
+    const myName = prompt('Bitte geben Sie Ihren Namen ein.');
     localStorage.setItem('name', myName);
     myHeading.textContent = 'w-vision ist cool, ' + myName;
-  }
-  if(!localStorage.getItem('name')) {
-    setUserName();
-  } else {
-    var storedName = localStorage.getItem('name');
-    myHeading.textContent = 'w-vision ist cool, ' + storedName;
-  }
+}
